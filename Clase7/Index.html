@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        ul {
+            list-style: circle; /*none | circle | disc (default) |*/
+        }
+        /* herencia ul li a */
+        .links li a {
+            color: green;
+        }
+
+        .texto-color {
+            color:blue;
+        }
+
+        #texto-color {
+            color:purple;
+        }
+
+        .texto-color-Important {
+            color:aqua !important
+        }
+        /* Important > Inline > Id > class */
+
+        /*selector de atributos*/
+        [href] {
+            /*background-color: blueviolet;*/
+            text-decoration: line-through;
+        }
+        /* Igual a algo | Exactamente algo */
+        [id="Galeria"] {
+            background-color: red;
+        }
+        /* Inicie con algo | Comience con */
+        [id^="re"] {
+            background-color: burlywood;
+        }
+        /* Q contenga una parte | una silaba */
+        [id*="ale"] {
+            font-size: 15px;
+            color: blue;
+            padding: 15px;
+        }
+        /* Q terminwn con */
+        [id$="os"] {
+            background-color: black;
+            color: white;
+        }
+
+        [href$="3"] {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ul class="links">
+                        <li>
+                            <a href="#nosotros">Link1</a>
+                        </li>
+                        <li>
+                            <a href="link2">Link2</a>
+                        </li>
+                        <li>
+                            <a href="link3">Link3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section >
+            <p  style="color: red"
+                class="texto-color texto-color-important"
+                id="#texto-color" >
+                            Parrafo
+            </p>
+        </section>
+        <section>
+          <Fieldset>
+            <legend>Oficiales</legend>
+            <form method="post">
+                <input type="file" name="archivo">
+                <button>
+                    Enviar
+                </button>
+            </form>
+          </Fieldset>
+        </section>
+
+        <section id="nosotros">
+            <h3>Nosotros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+        </section>
+
+        <section id="contactos">
+            <h3>Contactos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+        </section>
+
+        <section id="galeria">
+            <h3>Galeria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+        </section>
+
+        <section>
+            <h3>Regaleria</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat magnam unde dignissimos! Laboriosam, maiores esse! Porro error excepturi minus fugiat eaque unde, commodi qui exercitationem, ut saepe perspiciatis! Quae.</p>
+        </section>
+    </main>
+</body>
+</html>

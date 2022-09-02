@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .CajaContainer {
+            width: 250px;
+            height: 200px;
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid red;
+            box-sizing: border-box;
+        }
+          /* para width, 100% dividido 4 */
+        .Uno {
+            background-color: red;
+        }
+        .Dos {
+            background-color: orange;
+        }
+        .Tres {
+            background-color: yellow;
+        }
+        .Cuatro {
+            background-color: blueviolet;
+        }
+        /* Herencia de dos DIV */
+        .CajaContainer div {
+            display: inline-block;
+            width: 16%;
+            height: 110px;
+            margin: 5px;
+        }
+        .CajaSola {
+           /* padding-top: 10px;
+            width: 200px;
+            height: 210px;
+            background-color: aquamarine;
+            box-sizing: border-box; */
+
+            /* Caja de Tamaño fijo*/
+            width: 100%;
+            height: 200px;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+        .CajaSola div {
+            width: 49%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Medidas.html">Medidas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quidem cupiditate qui quia veniam animi similique eum nihil omnis porro, pariatur sed commodi delectus illum? Pariatur error architecto earum voluptates?</p>
+            <div class="CajaContainer">
+                  <h1>Titulo</h1>
+            
+                <div class="Uno">
+                Uno
+                </div>
+                <div class="Dos">
+                Dos
+                </div>
+                <div class="Tres">
+                Tres
+                </div>
+                <div class="Cuatro">
+                Cuatro
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="CajaSola">
+                <div>
+                    UNO
+                </div>
+                <div>
+                    DOS
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
