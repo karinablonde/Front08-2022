@@ -1,0 +1,185 @@
+div.container {
+    border: 1px solid black
+}
+
+/* Universal suaviso los bordes */
+* {
+    margin: opx;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*flexbox*/
+.container-flex {
+    border: 1px solid red;                                                                          
+    display: flex;
+    background-color: beige;
+    justify-content: space-evenly; /*alinea el contenido*/
+   /* height: 400px;  */                           
+    flex-direction: row;     /*fila y columna*/
+   /* align-items: flex-start;*/
+   /* width: 50%; */
+   flex-wrap: wrap; /*nowrap: no se baja */
+}
+
+.container-item {
+    width: 100px;
+    height: 50px;
+    border: 2px solid yellow;
+    background-color: aqua;
+}
+/* media query: me sirve para cambiar los estilos cuando cambia la resolucion */
+@media screen and (max-width:600px) {
+    .container-flex {
+        flex-direction: column;
+        background-color: blueviolet;
+    }
+    .container-item {
+        flex: size 2em;
+        color:blue 
+    }
+}  
+/* @media screen and (max width:600px) {
+    section {
+        flex-direction:column;
+    } /*Me muevo de 600 para abajo y se pone en columna
+} */  
+/* estilos para las section*/
+/* section:nth-child(1) los puedo identificar con algun elemento*/
+section {
+    height: 650px;
+    /* border: 1px solid blue; */
+    /* margin: 10px; */
+    display: flex;
+    padding: 10px;
+    align-items: center; /*para q qde todo centrado*/
+    justify-content: center;
+}
+/*Boton de las section por fuera de la media quering*/
+.content-text a {
+    display: inline block;
+    width: 100px;
+    height: 45px;
+    /*border: 1px solid beige;*/
+    border-radius: 20px;
+    line-height: 45px;
+    background: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: black; /*color letra*/
+}
+
+.content-text a:hover {
+    border: 1px solid blue;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        flex-direction: column;
+    }
+    section img {
+        /*border: 5px solid black;*/
+        width: 35%
+    }
+    . content-text { /*centrar el contenido del div*/
+        text-align: center;
+    }   
+}
+
+
+
+/* Tamaño de la Imagen*/
+section img {
+    margin: 15px;
+    width: 50%;
+}
+
+/* similar a a:hover */ /*aplico webgradients*/
+main section:first-child {
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+}
+
+main section:last-child {
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}  
+
+/*sino es primero ni ultimo los enumero con nth-chil(8)*/
+main section:nth-child(2) {
+    background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+}
+/* :nth:child(3n+1) : WH !!!!
+
+/* impares 
+section:nth-child(odd) {
+    background-color: red;
+}
+
+/* pares 
+section:nth-child(even) {
+    background-color: blue;
+}
+
+/* Mayor ESpecificidad 
+section:first-child {
+    background-color: rgb(0, 100, 0) !important /*pisa sobre todo 
+}    
+*/
+
+/*HTML: suaviza el deslice de la pagina*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Tabla para PARES (odd)
+table tr:nth-child(2n) {
+    background-color: red;
+}
+Para (even) IMPARES (2n+1) */
+
+/* Vamos a trabajar el Menu, primero la class*/
+.menu-container {
+    background-color: violet;
+    display: flex;
+    padding: 10px;
+    /*flex direction: row */
+    justify-content: space-between;
+    height: 50px;
+    position: sticky;/*para scrolear y dejar fija la parte de arriba*/
+    top: 0%;
+    /*si queren fijo
+    position: fixed;
+    width: 100%; */
+
+}
+/*dentro del bloque ul dejar los elementos li en linea, no en bloque como estan ahora*/
+.menu-container ul li {
+    display: inline-block;
+    /*height: 20px; para darle volumen y no tener q llegar a la letra para clickear*/
+}
+/* le saco la decoracion del texto a los "a"*/
+.menu-container a {
+    /*display: inline-block; para darle volumen al "a"
+    height: 50px; para darle height tiene q haber un display*/
+    text-decoration: none;
+}
+/* le doy un estilo a los "a" para cuando pase el mouse por encima */
+.menu-container a:hover {
+    font-size: 1.2em;/*se agranda la imagen*/
+    color: white;/*cambia el color*/
+}
+/* me fijo dentro de q esta la imagen y la achico*/
+header img {
+    display: block; /*se utiliza para espacios fantasmas*/
+    height: 650px;/*porq los porcentajes no coordinan*/
+    width: 100%;/* le saco el espacio en blanco debajo de la imagen, un borde inferior(margin o algo)*/
+}
+/* le metio un id por html, qda fijo y no se puede usar en ningun lado
+#portada img {
+    width: 100%;
+}*/
+
+
+
+
+

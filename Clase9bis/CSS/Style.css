@@ -1,0 +1,52 @@
+/* agrego en la primer linea las fueentes */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: beige;
+}
+
+/* Creo una Clase en <ul> */
+
+.menu container {
+    list-style-type: none;
+    background-color: black;
+    padding: 15px;
+    height: 30px;
+}
+
+.menu-container li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.menu container li a {
+    text-decoration: nono;
+    display: block;
+    height: 50px;
+    /*border: 1px solid blue;*/
+    color: white;
+}
+
+/*hover: pseudo clases cuando paso el mouse sobre "algo" */
+.menu-container li a:hover {
+    color: blueviolet;
+    /*background-color: white;*/
+    /*redondear el borde*/
+    /*border-radius: 15px;*/
+    font-weight: bolder;
+}
+
+.active {
+    font-size: 1.2em;
+    color: chocolate;
+}
+
+/*section de main*/
+h1 {
+    text-align: center;
+    color: aqua;
+    margin: 15px;
+}
