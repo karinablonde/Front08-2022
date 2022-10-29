@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPIntegradorBootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <style>
+      .btn-send  {
+        background-color: rgb(150, 201, 62);
+      }
+      .py-5 {
+         padding-top: none!important;
+      }
+      .intro {  
+      background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../TPIntegrador/hawaii.jpg);
+      background-size: 100% 100%;
+      background-image: no repeat;
+      min-height: 90vh;
+      }
+      .tarjeta {
+        background-color: transparent;
+      }
+      .charla {
+        border-bottom: 2pxdotted;
+        text-decoration: none;
+      }
+      .text-conf {
+        padding-top: 300px;
+        padding-right: 50px;
+      }
+    </style>
+  </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark px-xl-5 fs-5">
+          <div class="container-fluid">
+            <a class="navbar-brand col-md-4" href="#"> 
+              <img src="../TPIntegrador/codoacodo.png" width="100px" alt="">Conf Bs As
+            </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="navbar-nav col-12 col-md-8">
+              <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                  <a class="nav-link text-white" href="#">La conferencia</a>
+                  <a class="nav-link" href="#">Los oradores</a>
+                  <a class="nav-link" href="#">El lugar y la fecha</a>
+                  <a class="nav-link" href="#">Conviertete en orador</a>
+                  <a class="nav-link text-success" href="../IntegradorJS/ComprarTickets.html">Comprar tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="container-fluid-intro">
+          <div class="card" style="width:100%;">
+            <img src="../TPIntegrador/ba1.jpg" alt="card-image" class="imagen-agua">
+            <div class="row card-img-overlay justify-content-end text-end">
+                <div class="col-md-5 align-self-center text-white fs-5">
+                  <h4 class="card-title titulo-imagen">Conf Bs As</h4>
+                  <p class="card-text">
+                     Bs As llega por primera vez a Argentina.Un evento para compartir con nuestra comunidad el
+                     conocimiento y experiencia de los expertos que están creando el futuro de internet.Ven a conocer a miembros
+                     del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                     esperamos!
+                  </p>
+                  <a class="btn btn-outline-light my-2" href="">Quiero ser orador</a>
+                  <a class="btn btn-primary btn-success my-2" href="../IntegradorJS/ComprarTickets.html" >Comprar tickets</a>
+                </div>  
+            </div>
+          </div >   
+        </section>
+        <br>
+        <section class="container-fluid oradores">
+          <div class="oradores-title">
+            <p class="text-center" style="height: 12px;">Conoce a los </p>  
+            <p class="text-center fs-1">ORADORES</p>
+          </div>
+          <div class="row oradores-list d-flex justify-content-center">
+            <div class="card col-sm-12" style="width: 23rem;">
+              <img src="../TPIntegrador/steve.jpg" class="card-img-top card-img" alt="...">
+              <div class="card-body">
+                <div class="btns-group">
+                   <button type="button" class="btn btn-warning btns text-black badge">JavaScript</button>
+                  <button type="button" class="btn btn-info btns text-white badge">React</button>
+                </div>
+                  <h5 class="card-title">Steve Jobs</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, modi dicta, eligendi ratione dolores, facere distinctio non quidem libero deserunt nobis!</p>
+              </div>
+            </div>
+            <div class="card col-sm-12" style="width: 23rem;">
+              <img src="../TPIntegrador/bill.jpg" class="card-img-top card-img" alt="...">
+              <div class="card-body">
+                <div class="btns-group">
+                  <button type="button" class="btn btn-warning btns text-black badge">JavaScript</button>
+                  <button type="button" class="btn btn-info btns text-white badge">React</button>
+                </div>
+                  <h5 class="card-title">Bill Gates</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum molestias hic provident repudiandae eligendi veniam itaque eaque natus pariatur error.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 23rem;">
+              <img src="../TPIntegrador/ada.jpeg" class="card-img-top card-img" alt="...">
+              <div class="card-body">
+                <div class="btns-group  ">
+                  <button type="button" class="btn btn-secondary btns text-white badge">Negocios</button>
+                  <button type="button" class="btn btn-danger btns text-white badge">Startups</button>
+                </div>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsum recusandae pariatur adipisci, deserunt, nihil atque maiores molestias id quam sed laborum.
+                  </p>
+              </div>
+            </div>
+          </div>   
+        </section>
+        <br>
+        <section class="row" id="lug">
+          <div class="col-12 col-lg-6 p-0">
+            <img src="../TPIntegrador/honolulu.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-12 col-lg-6 " style="background-color:#353a40">
+            <div>
+              <h2 class="text-white mt-3">Bs As -Octubre </h2>
+              <p class="text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina,en los
+                Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses.Aunque el
+                nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu,la ciudad y el condado
+                de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600km² de
+                superficie) </p>
+              <button class="btn  btn btn bg-transparent btn-outline-light">Conocé más</button>
+            </div>
+          </div>
+        </section>
+        <br>
+          <div class="space pt-4">
+            <p class="text-center">CONVERTITE EN UN</p>
+            <p class="text-center">ORADOR</p>
+            <p class="fs-6 text-center">Anótate como orador para dar una 
+              <u>charla ignite</u>
+              . Cuéntanos de qué quieres hablar!
+            </p>
+          </div>
+        <section class="row col-12 col-lg-6 mx-auto">
+          <div class="mb-3 col-6">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+            <small class="form-text">Recuerda incluir un título para tu charla</small>
+          </div>
+          <div>
+            <button class="btn-send w-100 text-white rounded border-0 py-2">
+                Enviar
+            </button>
+          </div>     
+        </section>  
+      </main>
+      <br>
+      <footer >
+        <div class="cointainer-fluid justify-content-center" style="background-color: #1e4f6d;"> 
+          <ul   class="nav d-flex justify-content-evenly fs-6">
+            <li class="nav-item ">
+              <a class=" nav-link active text-white" aria-current="page" href="">Preguntas<br> Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="" >Conferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">Términos y<br> condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">Estudiantes</a>
+            </li>
+          </ul>
+        </div>  
+      </footer>     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+    </body>
+</html>
